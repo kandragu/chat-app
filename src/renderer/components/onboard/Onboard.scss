@@ -1,0 +1,46 @@
+@import '../../scss/variables.scss';
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  margin-top: 6rem;
+  margin-bottom: 1.3rem;
+}
+
+.link {
+  width: 100%;
+}
+
+.next-button {
+  margin-top: 1.3rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+}
+
+.next-button-disable {
+  margin-top: 1.3rem;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  transition: none;
+
+  &:hover {
+    transform: none;
+    opacity: 1;
+  }
+}

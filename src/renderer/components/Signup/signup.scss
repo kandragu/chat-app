@@ -1,0 +1,24 @@
+@import '../../scss/variables.scss';
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid $primary-border-color;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  padding: 2px;
+}
+
+.country-code {
+  background-color: $primary-color;
+  border: none;
+  padding: 10px;
+}
+
+.phone-input {
+  padding: 10px;
+  width: 20vw;
+  border: none;
+  outline: none;
+}

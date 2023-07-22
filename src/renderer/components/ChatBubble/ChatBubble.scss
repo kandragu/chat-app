@@ -1,0 +1,73 @@
+@import '../../scss/variables.scss';
+
+.chat-bubble {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  border-radius: 40%;
+  position: relative;
+
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  animation: slideUp 0.5s ease;
+
+  .bubble-time {
+    font-size: 0.7em;
+    text-align: end;
+  }
+
+  &.own-message {
+    align-self: flex-end;
+    background-color: $blue-color;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-top-color: $blue-color;
+      border-right-color: $blue-color;
+      border-bottom: none;
+      border-right: none;
+      margin-left: -7.5px;
+      margin-bottom: -12px;
+    }
+  }
+
+  &.other-message {
+    align-self: flex-start;
+    background-color: grey;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-top-color: grey;
+      border-left-color: grey;
+      border-bottom: none;
+      border-left: none;
+      margin-right: -7.5px;
+      margin-bottom: -12px;
+    }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

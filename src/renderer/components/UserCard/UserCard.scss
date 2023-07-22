@@ -1,0 +1,43 @@
+@import '../../scss/variables.scss';
+
+.user-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  background-color: $blue-color;
+  color: white;
+  width: 95%;
+
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .user-info {
+    flex-grow: 1;
+
+    .name {
+      font-weight: bold;
+    }
+
+    .tagline {
+      color: white;
+      width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+  }
+}
